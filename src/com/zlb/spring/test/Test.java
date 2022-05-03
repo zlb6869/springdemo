@@ -18,6 +18,7 @@ public class Test {
         System.out.println("hhhhhhhhhhhhhhhhh");
         System.out.println("hhhhhhhhhhhhhhhhh");
         System.out.println("hhhhhhhhhhhhhhhhh");
+        system.out.println("this")
         MyInvocationHandler myInvocationHandler = new MyInvocationHandler( new Haimpl());
         Ha o = (Ha) Proxy.newProxyInstance(Haimpl.class.getClassLoader(), Haimpl.class.getInterfaces(), myInvocationHandler);
         o.show(new Haha());
